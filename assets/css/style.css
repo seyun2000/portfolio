@@ -117,6 +117,7 @@ h1 {
 }
 
 h2 {
+    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
 }
@@ -304,7 +305,7 @@ ul.list-check li::before {
     position: relative;
     text-decoration: underline 3px #5AB2EA;
     text-underline-offset: 20px;
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroM';
 }
 
 /* .section-title::after {
@@ -326,9 +327,8 @@ ul.list-check li::before {
     .tt-fullHeight {
         height: 560px !important;
     }
-    
-}
 
+}
 
 #home {
     -webkit-background-attachment: fixed;
@@ -339,72 +339,131 @@ ul.list-check li::before {
     position: relative;
 }
 
-#home:before {
-    content: "";
-    /* background-color: rgba(26, 30, 35, 0.85); */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 #home video {
-    border-bottom: 1px solid #eee;
+    width: 100%;
+    backdrop-filter: brightness(1);
 }
 
-/* 
-SOCIAL ICON 
--------------------------------------------*/
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a i {
-    position: relative;
-    color: #fff;
-    font-size: 18px;
-    margin: 0 7px;
-    line-height: 40px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-}
-
-.social-icons a i::before {
-    position: relative;
-    z-index: 1;
-}
-
-.social-icons a i::after {
+.text_banner {
+    width: 736px;
     position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    -o-transition: all 300ms;
-    transition: all 300ms;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 0;
 }
 
-.social-icons a i:hover::after {
-    background: #68c3a3;
-    border: 1px solid transparent;
-    z-index: 0;
+.head_banner span {
+    opacity: 0;
+    animation: jump 2s forwards;
+    display: table-cell;
 }
 
+.head_banner {
+    color: #009CFF;
+    text-transform: uppercase;
+    font-size: 110px;
+    font-family: 'SBAggroM';
+}
+
+.name_banner,
+.year_banner {
+    font-size: 24px;
+    font-family: 'SBAggroL';
+    color: #009CFF;
+}
+
+.name_banner span,
+.year_banner span {
+    opacity: 0;
+    animation: jump 2s forwards;
+    display: table-cell;
+}
+
+.year_banner {
+    text-align: right;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+.head_banner span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.head_banner span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.head_banner span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.head_banner span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.head_banner span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.head_banner span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.head_banner span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.head_banner span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.head_banner span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.name_banner span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.name_banner span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.name_banner span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.name_banner span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.year_banner span {
+    animation-delay: 0.5s;
+}
 
 /* === NAVIGATION === */
 .header {
+    border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     position: relative;
     width: 100%;
@@ -471,8 +530,8 @@ SOCIAL ICON
 }
 
 .navbar-custom .navbar-nav>li>a {
-    color: #282828;
-    font-size: 14px;
+    color: #333;
+    font-size: 16px;
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -915,6 +974,10 @@ Icon for all respective meta
     padding: 0 20px;
 }
 
+.sns_bg p {
+    line-height: 20px;
+}
+
 .sns_bg h5 {
     font-size: 20px;
     padding-top: 20px;
@@ -1009,9 +1072,9 @@ Resume Timeline
 .resume:before {
     content: "";
     position: absolute;
-    top: -40px;
+    top: -74px;
     width: 2px;
-    height: 50px;
+    height: 100px;
     background-color: #5AB2EA;
     left: 50%;
     margin-left: -1.5px;
@@ -1109,7 +1172,6 @@ Resume Timeline
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
     width: 100px;
     height: 2px;
     margin-top: -1px;
@@ -1226,19 +1288,6 @@ Resume Timeline
         box-sizing: border-box;
     }
 
-    .second_resume .timeline-content p {
-        background-color: #1acedb;
-    }
-
-    .timeline-content h3 {
-        font-weight: 500;
-    }
-
-    .timeline-content h5 {
-        padding-top: 5px;
-        font-weight: 300;
-    }
-
     .timeline>li .posted-date {
         left: 50%;
         width: 120px;
@@ -1249,6 +1298,19 @@ Resume Timeline
     .timeline>li .posted-date .circle {
         float: none;
     }
+}
+
+.second_resume .timeline-content p {
+    background-color: #1acedb;
+}
+
+.timeline-content h3 {
+    font-weight: 500;
+}
+
+.timeline-content h5 {
+    padding-top: 5px;
+    font-weight: 300;
 }
 
 
@@ -1605,8 +1667,89 @@ Resume Timeline
     top: 65%;
 }
 
-
 /* body object */
+
+@keyframes cross1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(45deg);
+    }
+
+    40% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: rotate(45deg);
+    }
+
+    80% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes cross2 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    20% {
+        transform: rotate(45deg);
+    }
+
+    40% {
+        transform: rotate(90deg);
+    }
+
+    60% {
+        transform: rotate(90deg);
+    }
+
+    80% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes big {
+    0% {
+        top: 80%;
+    }
+
+    100% {
+        top: 75%;
+    }
+}
+
+@keyframes dot1 {
+    0% {
+        opacity: 15%;
+    }
+
+    100% {
+        opacity: 65%;
+    }
+}
+
+@keyframes dot2 {
+    0% {
+        opacity: 65%;
+    }
+
+    100% {
+        opacity: 15%;
+    }
+}
 
 .cross_ob {
     width: 20px;
@@ -1644,39 +1787,46 @@ Resume Timeline
 #about .container>img:nth-child(1) {
     top: 60%;
     right: -15%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #about .container>img:nth-child(2) {
     top: 85%;
     right: -8%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #about .container>img:nth-child(3) {
     top: 105%;
     right: -20%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 .biography>img:nth-child(1) {
     top: -5%;
     right: -5%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 .biography>img:nth-child(2) {
     top: 103%;
     right: -10%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #portfolio .container>img:nth-child(1) {
     top: -5%;
     left: -5%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #portfolio .container>img:nth-child(2) {
     top: 28%;
     left: -12%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #portfolio .container>img:nth-child(3) {
@@ -1689,78 +1839,92 @@ Resume Timeline
     top: 53%;
     right: -10%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #portfolio .container>img:nth-child(5) {
     top: 60%;
     right: -25%;
     transform: rotate(45deg);
+    animation: dot1 2s ease-in infinite alternate;
 }
 
 #portfolio .container>img:nth-child(6) {
     top: 78%;
     left: -10%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #portfolio .container>img:nth-child(7) {
     top: 85%;
     left: -25%;
     transform: rotate(-30deg);
+    animation: dot2 2s ease-in infinite alternate;
 }
 
 #artwork .container>img:nth-child(1) {
     top: 45%;
     right: -12%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #artwork .container>img:nth-child(2) {
     top: 55%;
     right: -25%;
     transform: rotate(60deg);
+    animation: dot1 2s ease-in infinite alternate;
 }
 
 #artwork .container>img:nth-child(3) {
     top: 70%;
     left: -15%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #artwork .container>img:nth-child(4) {
     top: 84%;
     left: -8%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #artwork .container>img:nth-child(5) {
     top: 95%;
     left: -20%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #resume .container>img:nth-child(1) {
     top: 30%;
     left: -5%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 #resume .container>img:nth-child(2) {
     top: 45%;
     left: -15%;
+    animation: dot2 2s ease-in infinite alternate;
 }
 
 #resume .container>img:nth-child(3) {
     top: 65%;
     left: -2%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #resume .container>img:nth-child(4) {
     top: 75%;
     right: -40%;
     transform: scaleX(-1) rotate(30deg);
+    animation: big 5s ease-in-out infinite alternate;
 }
 
 #resume .container>img:nth-child(5) {
     top: 120%;
     left: -5%;
     transform: rotate(45deg);
+    animation: cross2 5s ease-in-out infinite;
 }
 
 #resume .container>img:nth-child(6) {
@@ -1772,11 +1936,154 @@ Resume Timeline
 #resume .container>img:nth-child(7) {
     top: 165%;
     left: -12%;
+    animation: cross1 5s ease-in-out infinite;
 }
 
 
 /* 반응형 */
 
-@media(max-width:991px){
+@media (max-width:1200px) and (min-width:992px) {
 
+    #about {
+        padding-bottom: 200px;
+    }
+
+    .short-info h3 {
+        font-size: 24px;
+    }
+
+    .short-info h4 {
+        font-size: 16px;
+    }
+
+    .short-info p {
+        margin: 0 0 10px;
+        line-height: 26px;
+    }
+
+    .short-info ul {
+        margin-top: 0;
+        gap: 10px 0;
+    }
+
+    .short-info ul li {
+        text-align: center;
+    }
+
+    .tablet {
+        position: absolute;
+        left: -70%;
+        width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #portfolio .container>img:nth-child(3),
+    #resume .container>img:nth-child(6) {
+        left: -45%;
+    }
+
+    #resume .container>img:nth-child(4) {
+        right: -50%;
+    }
+
+    #resume .container>img:nth-child(2) {
+        left: -20%;
+    }
+
+    #resume .container>img:nth-child(3) {
+        left: -4%;
+    }
+
+    .resume-title h3 {
+        text-align: left;
+    }
+
+    .timeline>li .posted-date::before {
+        left: -20px;
+        margin-top: 18px;
+        margin-left: 0;
+        width: 40px;
+    }
+
+    .timeline-content {
+        padding-left: 40px;
+    }
+
+    .timeline-heading p {
+        display: inline-block;
+        border-radius: 50px;
+        padding: 0 10px;
+        background-color: #5AB2EA;
+        color: #fff;
+    }
+
+    .second_resume .timeline-heading p {
+        background-color: #1acedb;
+    }
+
+    .circle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .myphoto {
+        transform: none;
+        box-shadow: -10px 10px 0px #C4E8FF;
+    }
+
+    .timeline:before {
+        margin-left: 0;
+    }
+
+    .more-skill .col-xs-12 {
+        width: 50%;
+    }
+
+    #resume .container>img:nth-child(4) {
+        display: none;
+    }
+
+    #portfolio .container>img:nth-child(3),
+    #resume .container>img:nth-child(6) {
+        display: none;
+    }
+
+    .contact_box {
+        flex-direction: column;
+        padding-top: 0;
+        margin-bottom: 0;
+        padding-left: 50px;
+        gap: 50px 0;
+    }
+
+    .contact_box li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0 50px;
+    }
+
+    .contact_text {
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .short-info h3 {
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 622px) {
+    .short-info ul li {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    #resume .container>img:nth-child(2) {
+        display: none;
+    }
 }
