@@ -1070,18 +1070,6 @@ Resume Timeline
     position: relative;
 }
 
-.resume:before {
-    content: "";
-    position: absolute;
-    top: -74px;
-    width: 2px;
-    height: 100px;
-    background-color: #5AB2EA;
-    left: 50%;
-    margin-left: -1.5px;
-    z-index: -15;
-}
-
 .second_resume .resume:before {
     background-color: #1acedb;
 }
@@ -1111,10 +1099,11 @@ Resume Timeline
 .timeline:before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -50px;
     bottom: 0;
     width: 2px;
     margin-left: -1.5px;
+    z-index: -1;
     background-color: #5AB2EA;
 }
 
@@ -1940,6 +1929,14 @@ Resume Timeline
     animation: cross1 5s ease-in-out infinite;
 }
 
+.pc_mode {
+    display: block;
+}
+
+.mobile_mode {
+    display: none;
+}
+
 
 /* 반응형 */
 
@@ -2001,8 +1998,36 @@ Resume Timeline
         left: -4%;
     }
 
+    .resume-title::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-left: -9px;
+        margin-top: 4px;
+        border: 2px solid #5AB2EA;
+    }
+
     .resume-title h3 {
         text-align: left;
+    }
+
+    .resume-title h3 b {
+        color: #5AB2EA;
+        background-color: transparent;
+        padding: 0 20px;
+    }
+
+    .second_resume .resume-title::before {
+        border: 2px solid #1acedb;
+    }
+
+    .resume-title h3 span {
+        color: #1acedb;
+        background-color: transparent;
+        padding: 0 20px;
     }
 
     .timeline>li .posted-date::before {
@@ -2035,6 +2060,10 @@ Resume Timeline
 }
 
 @media (max-width: 767px) {
+
+    .container h3 {
+        line-height: 36px;
+    }
 
     .timeline:before {
         margin-left: 0;
@@ -2073,8 +2102,22 @@ Resume Timeline
         padding-top: 10px;
     }
 
-    .short-info h3 {
-        line-height: 36px;
+    .resume-title::before {
+        margin-left: -7px;
+        margin-top: 10px;
+    }
+
+    .pc_mode {
+        display: none;
+    }
+
+    .mobile_mode {
+        display: block;
+    }
+
+    .contact_box li img{
+        width: 75px;
+        height: 75px;
     }
 }
 
