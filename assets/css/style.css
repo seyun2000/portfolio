@@ -1979,6 +1979,10 @@ Resume Timeline
 }
 
 @media (max-width: 992px) {
+        .myphoto {
+        transform: none;
+        box-shadow: -10px 10px 0px #C4E8FF;
+    }
 
     #portfolio .container>img:nth-child(3),
     #resume .container>img:nth-child(6) {
@@ -2031,10 +2035,6 @@ Resume Timeline
 }
 
 @media (max-width: 767px) {
-    .myphoto {
-        transform: none;
-        box-shadow: -10px 10px 0px #C4E8FF;
-    }
 
     .timeline:before {
         margin-left: 0;
