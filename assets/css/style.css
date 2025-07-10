@@ -2086,7 +2086,7 @@ Resume Timeline
         flex-direction: column;
         padding-top: 0;
         margin-bottom: 0;
-        padding-left: 50px;
+        padding-left: 40px;
         gap: 50px 0;
     }
 
@@ -2115,9 +2115,18 @@ Resume Timeline
         display: block;
     }
 
-    .contact_box li img{
+    .contact_box li img {
         width: 75px;
         height: 75px;
+    }
+
+    .resume-title h3 {
+        font-size: 24px;
+    }
+
+    .scroll-up {
+        bottom: 3em;
+        right: 1.5em;
     }
 }
 
@@ -2129,5 +2138,16 @@ Resume Timeline
 
     #resume .container>img:nth-child(2) {
         display: none;
+    }
+
+    .scroll-up {
+        bottom: 2em;
+        right: 0.5em;
+    }
+}
+
+@media (max-width: 470px){
+    .contact_box{
+        padding: 0;
     }
 }
