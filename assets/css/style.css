@@ -299,8 +299,8 @@ ul.list-check li::before {
 .section-title {
     margin-bottom: 80px;
     /* text-align: center; */
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 40px;
     color: #5AB2EA;
     position: relative;
     text-decoration: underline 3px #5AB2EA;
