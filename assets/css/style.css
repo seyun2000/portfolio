@@ -327,7 +327,6 @@ ul.list-check li::before {
     .tt-fullHeight {
         height: 560px !important;
     }
-
 }
 
 #home {
@@ -337,11 +336,13 @@ ul.list-check li::before {
     background-size: cover;
     padding: 0;
     position: relative;
+    overflow: hidden;
 }
 
 #home video {
     width: 100%;
     backdrop-filter: brightness(1);
+    transform: translateY(1px);
 }
 
 .text_banner {
@@ -1440,7 +1441,6 @@ Resume Timeline
 }
 
 
-
 /*PopUp fade effect*/
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
@@ -1933,6 +1933,18 @@ Resume Timeline
     display: block;
 }
 
+.tablet_mode {
+    display: none;
+}
+
+.tablet_mode2 {
+    display: none;
+}
+
+.tablet_mode3 {
+    display: none;
+}
+
 .mobile_mode {
     display: none;
 }
@@ -1940,7 +1952,137 @@ Resume Timeline
 
 /* 반응형 */
 
-@media (max-width:1200px) and (min-width:992px) {
+@media (max-width: 1919px) and (min-width:1551px) {
+    .pc_mode {
+        display: none;
+    }
+
+    .tablet_mode {
+        display: block;
+    }
+
+    .tablet_mode2 {
+        display: none;
+    }
+
+    .tablet_mode3 {
+        display: none;
+    }
+
+    .mobile_mode {
+        display: none;
+    }
+
+    .text_banner {
+        width: 610px;
+        gap: 30px 0;
+    }
+
+    .head_banner {
+        font-size: 90px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 20px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 8px;
+    }
+
+}
+
+@media (max-width:1550px) and (min-width:1201px) {
+
+    .pc_mode {
+        display: none;
+    }
+
+    .tablet_mode {
+        display: none;
+    }
+
+    .tablet_mode2 {
+        display: block;
+    }
+
+    .tablet_mode3 {
+        display: none;
+    }
+
+    .mobile_mode {
+        display: none;
+    }
+
+    .text_banner {
+        width: 605px;
+        gap: 20px 0;
+        left: 13%;
+    }
+
+    .head_banner {
+        font-size: 90px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 16px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width:1200px) and (min-width:768px) {
+
+    .pc_mode {
+        display: none;
+    }
+
+    .tablet_mode {
+        display: none;
+    }
+
+    .tablet_mode2 {
+        display: none;
+    }
+
+    .tablet_mode3 {
+        display: block;
+    }
+
+    .mobile_mode {
+        display: none;
+    }
+
+    .text_banner {
+        width: 668px;
+        gap: 20px 0;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .head_banner {
+        font-size: 100px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 16px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width:1199px) and (min-width:992px) {
 
     #about {
         padding-bottom: 200px;
@@ -2057,9 +2199,35 @@ Resume Timeline
         display: none;
     }
 
+    .text_banner {
+        width: 540px;
+        gap: 15px 0;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .head_banner {
+        font-size: 80px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 16px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 5px;
+    }
+
 }
 
 @media (max-width: 767px) {
+
+    #home video {
+        transform: translateY(2px);
+    }
 
     .container h3 {
         line-height: 36px;
@@ -2111,6 +2279,18 @@ Resume Timeline
         display: none;
     }
 
+    .tablet_mode {
+        display: none;
+    }
+
+    .tablet_mode2 {
+        display: none;
+    }
+
+    .tablet_mode3 {
+        display: none;
+    }
+
     .mobile_mode {
         display: block;
     }
@@ -2144,10 +2324,54 @@ Resume Timeline
         bottom: 2em;
         right: 0.5em;
     }
+
+    .text_banner {
+        width: 435px;
+        gap: 10px 0;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .head_banner {
+        font-size: 64px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 14px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 4px;
+    }
 }
 
-@media (max-width: 470px){
-    .contact_box{
+@media (max-width: 470px) {
+    .contact_box {
         padding: 0;
+    }
+
+    .text_banner {
+        width: 274px;
+        gap: 0;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .head_banner {
+        font-size: 40px;
+    }
+
+    .name_banner,
+    .year_banner {
+        font-size: 12px;
+    }
+
+    .name_banner span,
+    .year_banner span {
+        padding-right: 2px;
     }
 }
