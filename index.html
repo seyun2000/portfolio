@@ -8,7 +8,7 @@
   <meta name="keywords"
     content="onepage, resume, CV HTML template, personal Vcard, html resume, free resume template, free HTML template, free bootstrap template, personal portfolio, free html portfolio">
   <meta name="author" content="http://trendytheme.net/">
-  <meta property="og:image" content="https://ifh.cc/g/HAmnt5.png"/>
+  <meta property="og:image" content="https://ifh.cc/g/HAmnt5.png" />
 
   <title>Seyun's Portfolio</title>
 
@@ -27,6 +27,8 @@
   <link href="assets/css/style.css" rel="stylesheet" media="screen">
   <!-- Responsive CSS -->
   <link href="assets/css/responsive.css" rel="stylesheet">
+  <!-- 스와이퍼 css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -288,7 +290,7 @@
                 </div><!-- /.portfolio-bg -->
               </a>
               <h5>민음북클럽, &lt;인간실격&gt; 북토크</h5>
-              <p>민음사에서 출간한 다자이 오사무, 인간실격의 북토크 행사를 안내하는 SNS 게시물입니다.</p>
+              <p>인간실격의 북토크 행사를 안내하는 SNS 게시물입니다.</p>
             </div>
           </div><!-- /.portfolio-item -->
 
@@ -308,8 +310,8 @@
                   </div><!-- /.portfolio -->
                 </div><!-- /.portfolio-bg -->
               </a>
-              <h5>SNS design title</h5>
-              <p>SNS design information</p>
+              <h5>피그마 플러그인 추천</h5>
+              <p>피그마 툴의 추천 플러그인을 소개하는 SNS 게시물입니다.</p>
             </div>
           </div><!-- /.portfolio-item -->
 
@@ -322,15 +324,15 @@
                     <div class="links">
                       <i class="fa fa-search-plus"></i>
                     </div><!-- /.links -->
-                    <img src="assets/images/sns_banner2.jpg" alt="image">
+                    <img src="assets/images/sns_banner3.jpg" alt="image">
                     <div class="portfolio-info">
                       <h3>Click to view</h3>
                     </div><!-- /.portfolio-info -->
                   </div><!-- /.portfolio -->
                 </div><!-- /.portfolio-bg -->
               </a>
-              <h5>SNS design title</h5>
-              <p>SNS design information</p>
+              <h5>덴바스타 만덕 료칸, 오픈 이벤트</h5>
+              <p>덴바스타 료칸의 오픈 이벤트를 알리는 SNS 게시물입니다.</p>
             </div>
           </div><!-- /.portfolio-item -->
         </div><!-- /#grid -->
@@ -341,25 +343,64 @@
   <!-- Popup Section -->
   <div class="popup" id="pop01">
     <div class="popup_in">
-      <i class="fa fa-times"></i>
-      <img src="./assets/images/sns_banner1.jpg" alt="sns 이미지1">
-      <img src="./assets/images/sns_banner11.jpg" alt="sns 이미지2">
+      <div class="slider_box1">
+        <i class="fa fa-times"></i>
+        <div class="swiper sns_banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/sns_banner1.jpg" alt="sns 이미지1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/sns_banner11.jpg" alt="sns 이미지1-2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/sns_banner111.jpg" alt="sns 이미지1-3">
+            </div>
+          </div>
+        </div>
+        <div class="navigation-wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="popup" id="pop02">
     <div class="popup_in">
-      <i class="fa fa-times"></i>
-      <img src="./assets/images/sns_banner2.jpg" alt="sns 이미지1">
-      <img src="./assets/images/sns_banner2.jpg" alt="sns 이미지2">
+      <div class="slider_box1">
+        <i class="fa fa-times"></i>
+        <div class="swiper sns_banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/sns_banner2.jpg" alt="sns 이미지2"></div>
+            <div class="swiper-slide"><img src="./assets/images/sns_banner22.jpg" alt="sns 이미지2-2"></div>
+            <div class="swiper-slide"><img src="./assets/images/sns_banner222.jpg" alt="sns 이미지2-3"></div>
+            <div class="swiper-slide"><img src="./assets/images/sns_banner2222.jpg" alt="sns 이미지2-4"></div>
+          </div>
+        </div>
+        <div class="navigation-wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="popup" id="pop03">
     <div class="popup_in">
-      <i class="fa fa-times"></i>
-      <img src="./assets/images/sns_banner2.jpg" alt="sns 이미지1">
-      <img src="./assets/images/sns_banner2.jpg" alt="sns 이미지2">
+      <div class="slider_box1">
+        <i class="fa fa-times"></i>
+        <div class="swiper sns_banner_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/sns_banner3.jpg" alt="sns 이미지3"></div>
+            <div class="swiper-slide"><img src="./assets/images/sns_banner33.jpg" alt="sns 이미지3-2"></div>
+          </div>
+        </div>
+        <div class="navigation-wrapper">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- End Popup Section -->
@@ -799,8 +840,20 @@
   <script src="assets/js/jquery.inview.min.js"></script>
   <script src="assets/js/jquery.easypiechart.js"></script>
   <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="assets/js/scripts.js"></script>
+
+  <script>
+    var swiper = new Swiper(".sns_banner_swiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".slider_box1 .swiper-button-next",
+        prevEl: ".slider_box1 .swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
