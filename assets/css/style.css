@@ -2347,6 +2347,12 @@ Resume Timeline
     }
 }
 
+@media (max-width: 557px) and (min-width: 408px) {
+    .short-info .name1 {
+        display: block;
+    }
+}
+
 @media (max-width: 470px) {
     .contact_box {
         padding: 0;
@@ -2375,6 +2381,15 @@ Resume Timeline
     }
 }
 
+@media (max-width:407px) {
+    .short-info .name1 {
+        display: inline;
+    }
+
+    .short-info .name2{
+        display: block;
+    }
+}
 
 /* 팝업 스와이퍼 */
 
