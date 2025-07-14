@@ -182,7 +182,14 @@ jQuery(function ($) {
 
 });
 
-
-
+// 스와이퍼 js
+var swiper = new Swiper(".sns_banner_swiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".slider_box1 .swiper-button-next",
+        prevEl: ".slider_box1 .swiper-button-prev",
+    },
+});
 
 
