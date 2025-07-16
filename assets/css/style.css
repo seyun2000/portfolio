@@ -2391,6 +2391,11 @@ Resume Timeline
     .year_banner span {
         padding-right: 2px;
     }
+
+    .entry-title h3 .b_another {
+        padding-left: 0;
+        display: block;
+    }
 }
 
 @media (max-width:407px) {
