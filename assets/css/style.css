@@ -747,11 +747,22 @@ ul.list-check li::before {
 
 .blog-post-wrapper .img-responsive {
     padding: 0;
+    transition: 0.5s;
+    display: block;
 }
 
 .blog-post-wrapper>h3 {
     font-weight: 700;
     padding-bottom: 5px;
+}
+
+.imgbox{
+    overflow: hidden;
+}
+
+.blog-post-wrapper img:hover{
+    transform: scale(1.1, 1.1);
+    filter: brightness(106%);
 }
 
 .entry-title h3 {
@@ -766,14 +777,11 @@ ul.list-check li::before {
 
 .entry-title p {
     line-height: 24px;
+    padding-top: 15px;
 }
 
 .entry-title {
     padding: 30px 0;
-}
-
-.entry-title p {
-    padding-top: 20px;
 }
 
 .button {
@@ -949,7 +957,7 @@ Icon for all respective meta
     overflow: hidden;
     margin-bottom: 50px;
     background-color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -966,7 +974,7 @@ Icon for all respective meta
 }
 
 .sns_bg {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     background-color: #fff;
 }
 
