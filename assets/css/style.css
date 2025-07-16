@@ -2294,6 +2294,10 @@ Resume Timeline
         display: block;
     }
 
+    .pc_mode2 {
+        display: none;
+    }
+
     .contact_box li img {
         width: 75px;
         height: 75px;
@@ -2386,7 +2390,7 @@ Resume Timeline
         display: inline;
     }
 
-    .short-info .name2{
+    .short-info .name2 {
         display: block;
     }
 }
