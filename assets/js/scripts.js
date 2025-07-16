@@ -210,4 +210,17 @@ var swiper = new Swiper(".sns_banner_swiper3", {
     },
 });
 
+// IOS 저전력모드일 때 동영상 재생 시키는 JS
+$('body').on('click touchstart', function () {
+    const videoElement = document.getElementById('home_video');
+    if (videoElement.playing) {
+        // video is already playing so do nothing
+    }
+    else {
+        // video is not playing
+        // so play video now
+        videoElement.play();
+    }
+});
+
 
