@@ -12,9 +12,71 @@
 
 <body>
     <header>
-        <a href="#">
-            <img src="./images/logo.png" alt="로고" class="logo">
-        </a>
+        <div class="header_in">
+            <a href="#">
+                <img src="./images/logo.png" alt="로고" class="logo">
+            </a>
+            <ul class="nav">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="sub">
+                        <ul class="nav_in">
+                            <li><a href="#none">ABKO</a></li>
+                            <li><a href="#none">CI.BI</a></li>
+                            <li><a href="#none">사업장안내</a></li>
+                            <li><a href="#none">CEO 인사말</a></li>
+                            <li><a href="#none">연혁</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none">브랜드</a>
+                    <div class="sub">
+                        <ul class="nav_in">
+                            <li><a href="#none">ABKO Life</a></li>
+                            <li><a href="#none">Haker</a></li>
+                            <li><a href="#none">N.Core</a></li>
+                            <li><a href="#none">COX</a></li>
+                            <li><a href="#none">Pad Bank</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none">공지사항</a>
+                    <div class="sub">
+                        <ul class="nav_in">
+                            <li><a href="#none">공지사항</a></li>
+                            <li><a href="#none">뉴스</a></li>
+                            <li><a href="#none">이벤트</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="sub">
+                        <ul class="nav_in">
+                            <li><a href="#none">자료실 및 다운로드</a></li>
+                            <li><a href="#none">1:1 문의</a></li>
+                            <li><a href="#none">AS 접수 및 조회</a></li>
+                            <li><a href="#none">자주 묻는 질문</a></li>
+                            <li><a href="#none">대리점 정보</a></li>
+                            <li><a href="#none">Shop</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="sub">
+                        <ul class="nav_in">
+                            <li><a href="#none">재무정보</a></li>
+                            <li><a href="#none">주가 정보</a></li>
+                            <li><a href="#none">공시/공고</a></li>
+                            <li><a href="#none">내부정보관리규정</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- 중앙 전체 -->
@@ -129,7 +191,8 @@
                 </li>
                 <li>
                     <p>
-                        상호 : 주식회사 앱코 ㅣ 대표이사 : 오광근 ㅣ 개인정보관리책임자 : 이경미 ㅣ 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가) <br>
+                        상호 : 주식회사 앱코 ㅣ 대표이사 : 오광근 ㅣ 개인정보관리책임자 : 이경미 ㅣ 관리자 메일 : webmaster2020@abko.co.kr (제휴, 상담문의 불가)
+                        <br>
                         통신판매신고 : 2020-서울강서-0310 ㅣ 본사 : 서울특별시 강서구 마곡중앙1로 20, 7층 (마곡동) ㅣ 사업자 등록번호 : 106-86-01413
                     </p>
                     <table>
@@ -162,6 +225,18 @@
         <img src="./images/top.png" alt="탑 버튼">
     </a>
 
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".nav>li").mouseover(function () {
+                $(this).children(".sub").stop().slideDown();
+            });
+            $(".nav>li").mouseout(function () {
+                $(this).children(".sub").stop().slideUp();
+            });
+        });
+    </script>
 </body>
 
 </html>

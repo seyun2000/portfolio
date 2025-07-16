@@ -3,7 +3,7 @@
 /* font */
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
@@ -26,23 +26,86 @@ ul {
 
 a {
 	text-decoration: none;
+	color: #131316;
 }
+
 /* header */
-header{
+header {
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.3);
 	padding: 20px 0;
-	display: flex;
-	justify-content: center;
 }
 
+.header_in {
+	width: 1320px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.header_in>a img {
+	display: block;
+	padding: 20px;
+}
+
+header .nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 18px;
+}
+
+header .nav>li>a {
+	display: block;
+	font-weight: 300;
+	/* background-color: #ccc; */
+	padding: 30px;
+}
+
+header .nav>li:hover>a {
+	color: #EB1C23;
+}
+
+header .sub {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	display: none;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+
+header .sub a {
+	display: block;
+	padding: 40px 10px;
+}
+
+header .nav_in {
+	display: flex;
+	width: 1320px;
+	margin: auto;
+	gap: 50px;
+}
+
+header .nav_in a {
+	display: block;
+	font-weight: 300;
+}
+
+header .nav_in a:hover {
+	color: #EB1C23;
+}
 
 /* 중앙 전체 */
-.wrap{
-    width: 1320px;
-    margin: 0 auto 90px;
-    display: flex;
-    justify-content: space-between;
+.wrap {
+	width: 1320px;
+	margin: 0 auto 90px;
+	display: flex;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
@@ -54,25 +117,28 @@ header{
 
 
 /* 제품 정보 */
-.info{
-    padding: 20px 20px 0;
+.info {
+	padding: 20px 20px 0;
 }
+
 .info h1 {
-    font-size: 25px;
-    font-weight: 400;
+	font-size: 25px;
+	font-weight: 400;
 }
+
 .info h2 {
-    font-weight: 500;
-    font-size: 20px;
+	font-weight: 500;
+	font-size: 20px;
 	padding: 35px 0 8px;
 	border-bottom: 1px solid #131316bf;
 	margin-bottom: 14px;
 }
-.info ol{
+
+.info ol {
 	list-style: decimal inside;
 }
 
-.info .ol_in{
+.info .ol_in {
 	padding-left: 20px;
 	list-style: circle inside;
 }
@@ -89,12 +155,13 @@ header{
 .right h1 {
 	font-weight: 500;
 	font-size: 27px;
+	padding-top: 10px;
 }
 
 .right h2 {
 	font-size: 24px;
 	font-weight: 500;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .right h3 {
@@ -116,19 +183,23 @@ header{
 	padding-bottom: 20px;
 }
 
-.selectbox{
+.selectbox {
 	margin: 20px 0;
 	border-collapse: collapse;
 	width: 100%;
 }
-.selectbox th{
+
+.selectbox th {
 	text-align: left;
 	font-weight: 400;
 }
-.selectbox th, .selectbox td{
+
+.selectbox th,
+.selectbox td {
 	padding: 10px 0;
 }
-.selectbox select{
+
+.selectbox select {
 	outline: none;
 	width: 100%;
 	padding: 10px;
@@ -140,7 +211,7 @@ header{
 	gap: 5px;
 }
 
-.order li{
+.order li {
 	flex: 1;
 	text-align: center;
 }
@@ -169,19 +240,19 @@ header{
 	color: #ccc;
 }
 
-.footer b{
+.footer b {
 	color: #fff;
 }
 
-.footer p{
+.footer p {
 	line-height: 28px;
 }
 
-.footer a{
+.footer a {
 	color: #fff;
 }
 
-.footer img{
+.footer img {
 	display: block;
 	/* margin: auto; */
 	padding-top: 10px;
@@ -189,21 +260,21 @@ header{
 	filter: brightness(10);
 }
 
-.footer_in{
+.footer_in {
 	width: 1320px;
 	margin: auto;
 }
 
-.footer_in ul{
+.footer_in ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.footer_in ul li table{
+.footer_in ul li table {
 	padding: 20px 0;
 }
 
-.footer_in ul li table tr th{
+.footer_in ul li table tr th {
 	background: url(./images/call.png) no-repeat 0 48%;
 	background-size: 15px;
 	filter: brightness(100%);
@@ -212,26 +283,26 @@ header{
 	font-weight: 300;
 }
 
-.footer_in ul li table tr td{
+.footer_in ul li table tr td {
 	padding: 5px 10px;
 }
 
-.sns_link{
+.sns_link {
 	gap: 0 15px;
 }
 
-.sns_link img{
+.sns_link img {
 	width: 100%;
 	filter: brightness(70%);
 }
 
-.sns_link a:hover img{
+.sns_link a:hover img {
 	filter: none;
 }
 
 
 /* 탑 버튼 */
-.top_btn{
+.top_btn {
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
@@ -241,22 +312,23 @@ header{
 	border-radius: 50%;
 	border: 1px solid #000;
 }
-.top_btn img{
+
+.top_btn img {
 	display: block;
 }
 
-.top_btn:hover{
+.top_btn:hover {
 	background-color: #EB1C23;
 	border: 1px solid #EB1C23;
 }
 
-.top_btn:hover img{
+.top_btn:hover img {
 	filter: brightness(1000%);
 }
 
 
 /* 추가 */
-#product .img img{
+#product .img img {
 	display: block;
 	width: 400px;
 	height: 476px;
