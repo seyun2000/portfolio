@@ -303,7 +303,7 @@ ul.list-check li::before {
     line-height: 36px;
     color: #5AB2EA;
     position: relative;
-    text-decoration: underline 3px #5AB2EA;
+    text-decoration: underline;
     text-underline-offset: 20px;
     font-family: 'SBAggroM';
 }
@@ -2324,7 +2324,7 @@ Resume Timeline
     .sns_bg {
         margin-bottom: 30px;
     }
-    
+
     #portfolio .container>img:nth-child(5) {
         right: -30%;
     }
@@ -2386,7 +2386,7 @@ Resume Timeline
 }
 
 @media (max-width: 572px) {
-    .short-info>h4{
+    .short-info>h4 {
         line-height: 28px;
     }
 }
@@ -2466,8 +2466,7 @@ Resume Timeline
 .slider_box1 .swiper,
 .slider_box2 .swiper,
 .slider_box3 .swiper {
-    width: 1176px;
-    height: 733px;
+    width: 90%;
     /* border: 3px solid blue; */
 }
 
@@ -2494,7 +2493,7 @@ Resume Timeline
 .slider_box2 .navigation-wrapper,
 .slider_box3 .navigation-wrapper {
     /* border: 3px solid gold; */
-    width: 1270px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
