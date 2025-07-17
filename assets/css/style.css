@@ -2205,7 +2205,7 @@ Resume Timeline
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .myphoto {
         transform: none;
         box-shadow: -10px 10px 0px #C4E8FF;
@@ -2309,9 +2309,16 @@ Resume Timeline
         padding-right: 5px;
     }
 
+    .section-title{
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .sticky-wrapper{
+        display: none;
+    }
 
     #home video {
         transform: translateY(2px);
@@ -2444,7 +2451,7 @@ Resume Timeline
     .text_banner {
         width: 435px;
         gap: 10px 0;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -2497,7 +2504,7 @@ Resume Timeline
     .text_banner {
         width: 274px;
         gap: 0;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
