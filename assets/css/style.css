@@ -2324,6 +2324,14 @@ Resume Timeline
     .sns_bg {
         margin-bottom: 30px;
     }
+    
+    #portfolio .container>img:nth-child(5) {
+        right: -30%;
+    }
+
+    #portfolio .container>img:nth-child(7) {
+        left: -30%;
+    }
 }
 
 @media (max-width: 622px) {
