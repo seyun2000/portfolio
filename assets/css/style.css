@@ -1956,6 +1956,70 @@ Resume Timeline
     display: none;
 }
 
+/* 팝업 스와이퍼 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_box1 .swiper,
+.slider_box2 .swiper,
+.slider_box3 .swiper {
+    width: 1176px;
+    height: 733px;
+    /* border: 3px solid blue; */
+}
+
+.slider_box1 .swiper-button-prev,
+.slider_box1 .swiper-button-next,
+.slider_box2 .swiper-button-prev,
+.slider_box2 .swiper-button-next,
+.slider_box3 .swiper-button-prev,
+.slider_box3 .swiper-button-next {
+    position: static;
+    margin-top: 0;
+    color: #fff;
+}
+
+.slider_box1,
+.slider_box2,
+.slider_box3 {
+    position: relative;
+    /* border: 3px solid red; */
+    width: 100%;
+}
+
+.slider_box1 .navigation-wrapper,
+.slider_box2 .navigation-wrapper,
+.slider_box3 .navigation-wrapper {
+    /* border: 3px solid gold; */
+    width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
 
 /* 반응형 */
 
@@ -2041,6 +2105,23 @@ Resume Timeline
     .name_banner span,
     .year_banner span {
         padding-right: 5px;
+    }
+}
+
+@media (max-width:1320px) {
+
+    .slider_box1 .navigation-wrapper,
+    .slider_box2 .navigation-wrapper,
+    .slider_box3 .navigation-wrapper {
+        width: 100%;
+    }
+
+    .slider_box1 .swiper,
+    .slider_box2 .swiper,
+    .slider_box3 .swiper {
+        width: 90%;
+        height: inherit;
+        /* border: 3px solid blue; */
     }
 }
 
@@ -2332,6 +2413,17 @@ Resume Timeline
     #portfolio .container>img:nth-child(7) {
         left: -30%;
     }
+
+    .slider_box1 .navigation-wrapper,
+    .slider_box2 .navigation-wrapper,
+    .slider_box3 .navigation-wrapper {
+        width: 110%;
+    }
+
+    /* !important */
+    .popup_in{
+        height: 85vh!important;
+    }
 }
 
 @media (max-width: 622px) {
@@ -2438,68 +2530,4 @@ Resume Timeline
     .short-info .name2 {
         display: block;
     }
-}
-
-/* 팝업 스와이퍼 */
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider_box1 .swiper,
-.slider_box2 .swiper,
-.slider_box3 .swiper {
-    width: 90%;
-    /* border: 3px solid blue; */
-}
-
-.slider_box1 .swiper-button-prev,
-.slider_box1 .swiper-button-next,
-.slider_box2 .swiper-button-prev,
-.slider_box2 .swiper-button-next,
-.slider_box3 .swiper-button-prev,
-.slider_box3 .swiper-button-next {
-    position: static;
-    margin-top: 0;
-    color: #fff;
-}
-
-.slider_box1,
-.slider_box2,
-.slider_box3 {
-    position: relative;
-    /* border: 3px solid red; */
-    width: 100%;
-}
-
-.slider_box1 .navigation-wrapper,
-.slider_box2 .navigation-wrapper,
-.slider_box3 .navigation-wrapper {
-    /* border: 3px solid gold; */
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
 }
