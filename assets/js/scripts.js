@@ -184,29 +184,53 @@ jQuery(function ($) {
 
 // 스와이퍼 js
 var swiper = new Swiper(".sns_banner_swiper1", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: ".slider_box1 .swiper-button-next",
         prevEl: ".slider_box1 .swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 var swiper = new Swiper(".sns_banner_swiper2", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: ".slider_box2 .swiper-button-next",
         prevEl: ".slider_box2 .swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 var swiper = new Swiper(".sns_banner_swiper3", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: ".slider_box3 .swiper-button-next",
         prevEl: ".slider_box3 .swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
     },
 });
 
@@ -222,5 +246,3 @@ $('body').on('click touchstart', function () {
         videoElement.play();
     }
 });
-
-
