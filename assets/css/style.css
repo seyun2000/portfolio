@@ -139,6 +139,24 @@ h6 {
     font-size: 12px;
 }
 
+img {
+    -webkit-user-drag: none;
+    /* Safari, Chrome */
+    -khtml-user-drag: none;
+    /* Konqueror */
+    -moz-user-drag: none;
+    /* Firefox */
+    -o-user-drag: none;
+    /* Opera */
+    /* user-drag: none; */
+    /* Standard */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 
 
 /* === FORM STYLE === */
@@ -2431,6 +2449,10 @@ Resume Timeline
     .links,
     .portfolio-info {
         display: none;
+    }
+
+    .portfolio img:active{
+        filter: brightness(70%);
     }
 }
 
