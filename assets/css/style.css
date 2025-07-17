@@ -2290,7 +2290,7 @@ Resume Timeline
     .text_banner {
         width: 540px;
         gap: 15px 0;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -2309,14 +2309,14 @@ Resume Timeline
         padding-right: 5px;
     }
 
-    .section-title{
+    .section-title {
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 767px) {
 
-    .sticky-wrapper{
+    .sticky-wrapper {
         display: none;
     }
 
@@ -2427,9 +2427,10 @@ Resume Timeline
         width: 110%;
     }
 
-    /* !important */
-    .popup_in{
-        height: 85vh!important;
+    .tt-overlay,
+    .links,
+    .portfolio-info {
+        display: none;
     }
 }
 
