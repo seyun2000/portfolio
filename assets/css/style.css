@@ -756,11 +756,11 @@ ul.list-check li::before {
     padding-bottom: 5px;
 }
 
-.imgbox{
+.imgbox {
     overflow: hidden;
 }
 
-.blog-post-wrapper img:hover{
+.blog-post-wrapper img:hover {
     transform: scale(1.1, 1.1);
     filter: brightness(106%);
 }
@@ -2238,6 +2238,7 @@ Resume Timeline
 
     .container h3 {
         line-height: 36px;
+        padding-top: 5px;
     }
 
     .timeline:before {
@@ -2319,6 +2320,10 @@ Resume Timeline
         bottom: 3em;
         right: 1.5em;
     }
+
+    .sns_bg {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 622px) {
@@ -2356,6 +2361,25 @@ Resume Timeline
     .name_banner span,
     .year_banner span {
         padding-right: 4px;
+    }
+
+    .to-right-underline:hover {
+        color: inherit;
+        cursor: default;
+    }
+
+    .to-right-underline {
+        position: relative;
+    }
+
+    .to-right-underline:after {
+        content: none;
+    }
+}
+
+@media (max-width: 572px) {
+    .short-info>h4{
+        line-height: 28px;
     }
 }
 
