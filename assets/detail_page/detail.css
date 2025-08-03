@@ -115,6 +115,10 @@ header .nav_in a:hover {
 	width: 860px;
 }
 
+.main img{
+	display: block;
+}
+
 
 /* 제품 정보 */
 .info {
